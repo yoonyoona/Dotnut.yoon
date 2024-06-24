@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1400px">
+    <title>Dotnut</title>
+    <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./css/sub2.css">
+</head>
+
+<body>
+    <!-- 마우스 따라다니는 선 -->
+    <div id="drawing_line">
+        <svg class="drawing_line_svg">
+            <circle class="drawing_line_circle" cx="0" cy="0" r="8"></circle>
+            <polyline class="drawing_line_polyline" points=""></polyline>
+        </svg>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="header_in">
+            <a href="./index.html"><img src="./images/sub2/logo.png" alt="로고" class="logo"></a>
+            <ul class="nav">
+                <li><a href="./sub1.html">Menu</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html">메뉴소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html">Reservation</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html">픽업예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub3.html">Online Shop</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub3.html">리빙</a></li>
+                        <li><a href="./sub4.html">푸드</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub5.html">Event</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub5.html">이벤트</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub6.html">Brand</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub6.html">스토리</a></li>
+                        <li><a href="./sub7.html">CI소개</a></li>
+                    </ul>
+
+                </li>
+                <li class="sub_bg"></li>
+            </ul>
+            <ul class="member">
+                <li><a href="#" class="member_login">Login</a></li>
+                <li><a href="#" class="member_cart">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <div class="banner">
+        <img src="./images/sub2/menu_bg.png" alt="bg">
+        <h1>Reservation</h1>
+    </div>
+
+    <!-- 날짜 시간 선택 바 -->
+    <div class="day" id="day">
+        <a href="#day">
+            <ul class="day_bold">
+                <li><span>Step 1.</span></li>
+                <li>날짜선택</li>
+            </ul>
+        </a>
+        <a href="#day2">
+            <ul class="day_light">
+                <li><span>Step 2.</span></li>
+                <li>메뉴선택</li>
+            </ul>
+        </a>
+    </div>
+
+    <!-- 날짜 -->
+    <ul class="day_choice">
+        <li><a href="#none">5/4(토)</a></li>
+        <li><a href="#none">5/6(월)</a></li>
+        <li><a href="#none">5/7(화)</a></li>
+        <li><a href="#none">5/9(수)</a></li>
+        <li><a href="#none">5/10(목)</a></li>
+        <li><a href="#none">5/11(금)</a></li>
+        <li><a href="#none">5/12(토)</a></li>
+        <li><a href="#none">5/14(월)</a></li>
+        <li><a href="#none">5/15(화)</a></li>
+    </ul>
+
+    <!--시간-->
+    <ul class="time">
+        <li><a href="#none">11:00 ~ 14:00</a></li>
+        <li><a href="#none">14:00 ~ 17:00</a></li>
+        <li><a href="#none">17:00 ~ 20:00</a></li>
+    </ul>
+
+    <!-- 안내사항 주의사항 -->
+    <div class="text">
+        <h5>안내사항</h5>
+        <ul>
+            <li>예약 가능 기간: 픽업(예약)일을 제외한 2일 전 17시까지</li>
+            <li>취소 가능 기간: 픽업일 2일 전 17시까지 (기준시간 외 100% 환불 불가)</li>
+            <li>예약은 시간대별 총 3타임으로 해당 시간 내 방문을 부탁드립니다.</li>
+            <li>포장 요청 사항이 없을 경우, 닷넛 운영 기준에 따라 포장하여 제공됩니다.</li>
+            <li>매장 상황에 따라 제품 수령을 위한 현장 대기시간이 발생될 수 있습니다.</li>
+        </ul>
+        <h5>주의사항</h5>
+        <ul>
+            <li>예약 내용(시간/제품 등) 변경을 원하실 경우에는 취소 가능 기간 내 기존 예약을 취소하신 후 재예약을 해주셔야 합니다.</li>
+            <li>예약 취소 후 예약 취소 원복은 불가합니다.</li>
+            <li>주문 취소 후 환불은 결제 수단에 따라 영업일 기준 3일 ~ 7일 가량 소요될 수 있습니다.</li>
+            <li>식품은 제품 품질 유지를 위해 수령 후 교환/환불이 불가합니다.</li>
+            <li>픽업 당일 미수령 제품은 마감시간 이후 사전 안내 없이 폐기 처리 됩니다. (추후 재제공 및 환불 불가)</li>
+        </ul>
+    </div>
+
+    <!-- 중간 선 -->
+    <img src="./images/sub2/dot.png" alt="선" class="dashline">
+
+    <!-- 날짜 시간 선택 바 -->
+    <div class="day2" id="day2">
+        <a href="#day">
+            <ul class="day_light2">
+                <li><span>Step 1.</span></li>
+                <li>날짜선택</li>
+            </ul>
+        </a>
+        <a href="#day2">
+            <ul class="day_bold2">
+                <li><span>Step 2.</span></li>
+                <li>메뉴선택</li>
+            </ul>
+        </a>
+    </div>
+
+    <!-- tab 구문 -->
+    <div class="tab">
+        <ul class="tabnav">
+            <li><a href="#tab01">도넛</a></li>
+            <li><a href="#tab02">케이크</a></li>
+            <li><a href="#tab03">베이커리</a></li>
+        </ul>
+        <div class="tab_in">
+        <div class="tabcontent">
+            <div id="tab01" class="tab01">
+                <!-- 도넛 -->
+                <div class="donut">
+                    <img src="./images/sub2/vanilla_bg.png" alt="바닐라 박스">
+                    <p>바닐라 우유크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/kaya_bg.png" alt="카야 박스">
+                    <p>카야잼 버터 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/stcream_bg.png" alt="딸기 크림 박스">
+                    <p>딸기 크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/green_bg.png" alt="녹차">
+                    <p>녹차 초코 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <!-- <div class="donut">
+                    <img src="./images/sub2/choco_bg.png" alt="초코 오레오">
+                    <p>초코 오레오 크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                
+                <div class="donut">
+                    <img src="./images/sub2/coffee_bg.png" alt="얼그레이 박스">
+                    <p>커피 크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/al_bg.png" alt="얼그레이 박스">
+                    <p>얼그레이 크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/ras_bg.png" alt="라즈베리 박스">
+                    <p>라즈베리 크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/ingeol_bg.png" alt="인절미 박스">
+                    <p>녹차 인절미 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/vanilla_cus_bg.png" alt="바닐라 박스">
+                    <p>바닐라 커스터드 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/pist_d.png" alt="피스타치오 박스">
+                    <p>피스타치오 크림 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="donut">
+                    <img src="./images/sub2/ci_bg.png" alt="시나몬 박스">
+                    <p>시나몬 슈가 도넛</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div> -->
+            </div>
+            <!--케이크-->
+            <div id="tab02" class="tab02">
+                <div class="cake">
+                    <img src="./images/sub2/peach_cake.png" alt="피치케이크">
+                    <p>피치 초코 케이크</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="cake">
+                    <img src="./images/sub2/apple_cake.png" alt="애플생크림케이크">
+                    <p>애플 생크림 케이크</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="cake">
+                    <img src="./images/sub2/choco_cup.png" alt="초코 프레첼">
+                    <p>초코 프레첼 컵케이크</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="cake">
+                    <img src="./images/sub2/lemon_cupcake.png" alt="레몬크림 컵케이크">
+                    <p>레몬크림 컵케이크</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+            </div>
+            <!-- 베이커리 -->
+            <div id="tab03" class="tab03">
+                <div class="bakery">
+                    <img src="./images/sub2/milk_salt.png" alt="우유 크림 소금빵">
+                    <p>우유 크림 소금빵</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="bakery">
+                    <img src="./images/sub2/green_salt.png" alt="말차 크림 소금빵">
+                    <p>말차 크림 소금빵</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="bakery">
+                    <img src="./images/sub2/cheese_bg.png" alt="황치즈 크림 소금빵">
+                    <p>황치즈 크림 소금빵</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <div class="bakery">
+                    <img src="./images/sub2/pist_salt.png" alt="피스타치오 크림 소금빵">
+                    <p>피스타치오 크림 소금빵</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div>
+                <!-- <div class="bakery">
+                    <img src="./images/sub2/coffee_salt.png" alt="모카 크림 소금빵">
+                    <p>모카 크림 소금빵</p>
+                    <a href="#none">담기</a>
+                    <a href="#none">상세정보</a>
+                </div> -->
+
+            </div>
+            <img src="./images/sub2/prev.png" alt="prev" class="prev">
+            <img src="./images/sub2/next.png" alt="next" class="next">
+        </div>
+        <!-- 금액창 -->
+        <div class="box2">
+            <h1>Selected</h1>
+            <h3>Menu</h3>
+            <div class="box2_in">
+                <ul class="box2_in1">
+                    <li>바닐라 우유크림 도넛</li>
+                    <li><img src="./images/sub2/close.png" alt="닫기"></li>
+                </ul>
+                <ul  class="box2_in2">
+                    <li>- 1 +</li>
+                    <li>3,900원</li>
+                </ul>
+                <ul  class="box2_in3">
+                    <li>우유 생크림 도넛</li>
+                    <li><img src="./images/sub2/close.png" alt="닫기"></li>
+                </ul>
+                <ul  class="box2_in2">
+                    <li>- 1 +</li>
+                    <li>3,900원</li>
+                </ul>
+            </div>
+            <ul  class="box2_in4">
+                <li>총</li>
+                <li>43,900원</li>
+            </ul>
+            <h2>선택완료</h2>
+            <img src="./images/sub2/p_b.png" alt="캐릭터" class="pb">
+        </div>
+    </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_in">
+            <a href="#none"><img src="./images/sub2/logo.png" alt="푸터 로고"></a>
+            <div class="f_text">
+                <ul class="c_i">
+                    <li>
+                        <p>COMPANY INFORMATION</p>
+                    </li>
+                    <li>주식회사 닷넛</li>
+                    <li>대표 : 김윤아</li>
+                    <li>부산시 수영구 민락로 23번길</li>
+                    <li>사업자등록번호 : 245-52-21445</li>
+                </ul>
+                <ul class="s">
+                    <li>
+                        <p>SOCIAL</p>
+                    </li>
+                    <li><a href="#none" class="insta">Instagram</a></li>
+                    <li><a href="#none" class="kakao">Kakaotalk Channel</a></li>
+                </ul>
+                <ul class="h">
+                    <li>
+                        <p>HEIP</p>
+                    </li>
+                    <li>고객센터 : 2000-0921</li>
+                    <li>운영시간 : 평일 8시~11시, 주말/공휴일 9시~11시(일요일 휴무)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="./script/sub2.js"></script>
+</body>
+
+</html>

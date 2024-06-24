@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1400px">
+    <title>Dotnut</title>
+    <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./css/sub1.css">
+</head>
+
+<body>
+    <!-- 마우스 따라다니는 선 -->
+    <div id="drawing_line">
+        <svg class="drawing_line_svg">
+            <circle class="drawing_line_circle" cx="0" cy="0" r="8"></circle>
+            <polyline class="drawing_line_polyline" points=""></polyline>
+        </svg>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="header_in">
+            <a href="./index.html"><img src="./images/sub1/logo.png" alt="로고" class="logo"></a>
+            <ul class="nav">
+                <li><a href="./sub1.html">Menu</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html">메뉴소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html">Reservation</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html">픽업예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub3.html">Online Shop</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub3.html">리빙</a></li>
+                        <li><a href="./sub4.html">푸드</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub5.html">Event</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub5.html">이벤트</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub6.html">Brand</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub6.html">스토리</a></li>
+                        <li><a href="./sub7.html">CI소개</a></li>
+                    </ul>
+
+                </li>
+                <li class="sub_bg"></li>
+            </ul>
+            <ul class="member">
+                <li><a href="#" class="member_login">Login</a></li>
+                <li><a href="#" class="member_cart">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <div class="banner">
+        <img src="./images/sub1/menu_bg.png" alt="bg">
+        <h1>Menu</h1>
+    </div>
+
+    <!-- 탭메뉴 -->
+    <div class="tab">
+        <ul class="tabnav">
+            <li><a href="#tab01">DESSERT</a></li>
+            <li><a href="#tab02">DRINK</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="search">
+        </div>
+        <div class="tabcontent">
+            <!-- 디저트 -->
+            <div id="tab01" class="tab01">
+                <img src="./images/sub1/p_b.png" alt="p_b" class="p_b">
+                <h1 class="h1_dessert">Dessert</h1>
+                <ul class="dessert_in">
+                    <li><a href="#tab03">Donut</a></li>
+                    <li><a href="#tab04">Cake</a></li>
+                    <li><a href="#tab05">Bakery</a></li>
+                </ul>
+                <!-- 도넛 -->
+                <div id="tab03">
+                    <h3 class="h3_donut">Donut</h3>
+                    <div class="donut_box">
+                        <div class="d_box1 pop1">
+                            <img src="./images/sub1/vanillamilk_d.png" alt="바닐라밀크도넛">
+                            <a href="#none"><span>바닐라 우유크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/kaya_d.png" alt="카야도넛">
+                            <a href="#none"><span>카야잼 버터 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/strawberry_d.png" alt="딸기크림도넛">
+                            <a href="#none"><span>딸기 크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/algery_d.png" alt="얼그레이 크림 도넛">
+                            <a href="#none"><span>얼그레이 크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/pistachio_d.png" alt="피스타치오 크림 도넛">
+                            <a href="#none"><span>피스타치오 크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/greenchoco_d.png" alt="녹차 초코 도넛">
+                            <a href="#none"><span>녹차 초코 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/cinnamon_d.png" alt="시나몬 슈가 도넛">
+                            <a href="#none"><span>시나몬 슈가 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/coffee_d.png" alt="커피 크림 도넛">
+                            <a href="#none"><span>커피 크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/vanillacustard_d.png" alt="바닐라 커스터드 도넛">
+                            <a href="#none"><span>바닐라 커스터드 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/raspberry_d.png" alt="라즈베리 크림 도넛">
+                            <a href="#none"><span>라즈베리 크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/choco_d.png" alt="초코 오레오 크림 도넛">
+                            <a href="#none"><span>초코 오레오 크림 도넛</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/vanillamilk_d.png" alt="녹차 인절미 도넛">
+                            <a href="#none"><span>녹차 인절미 도넛</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 케이크 -->
+                <div id="tab04">
+                    <h3 class="h3_cake">Cake</h3>
+                    <div class="donut_box">
+                        <div class="d_box1">
+                            <img src="./images/sub1/peach_cake.png" alt="피치 케이크">
+                            <a href="#none"><span>피치 초코 케이크</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/apple_cake.png" alt="apple_cake">
+                            <a href="#none"><span>애플 생크림 케이크</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/choco_cupcake.png" alt="choco_cupcake">
+                            <a href="#none"><span>초코 프레첼 컵케이크</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/lemon_cupcake.png" alt="lemon_cupcake">
+                            <a href="#none"><span>레몬 크림 컵케이크</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 베이커리 -->
+                <div id="tab05">
+                    <h3 class="h3_bakery">Bakery</h3>
+                    <div class="donut_box">
+                        <div class="d_box1">
+                            <img src="./images/sub1/milk_salt.png" alt="milk_salt">
+                            <a href="#none"><span>우유 크림 소금빵</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/green_salt.png" alt="green_salt">
+                            <a href="#none"><span>말차 크림 소금빵</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/coffeesalt.png" alt="coffeesalt">
+                            <a href="#none"><span>모카 크림 소금빵</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/pistachiosalt.png" alt="pistachiosalt">
+                            <a href="#none"><span>피스타치오 크림 소금빵</span></a>
+                        </div>
+                        <div class="d_box1">
+                            <img src="./images/sub1/cheese_salt.png" alt="cheese_salt">
+                            <a href="#none"><span>황치즈 크림 소금빵</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 음료 -->
+            <div id="tab02" class="tab02">
+                <img src="./images/sub1/p_b.png" alt="p_b" class="p_b">
+                <h1 class="h1_drink">Drink</h1>
+                <ul class="drink_in">
+                    <li><a href="#tab06">coffee</a></li>
+                    <li><a href="#tab07">Beverage</a></li>
+                </ul>
+
+                <!-- 커피 -->
+                <div id="tab06">
+                    <h3 class="h3_coffee">Coffee</h3>
+                    <div class="coffee_box">
+                        <div class="c_box1">
+                            <img src="./images/sub1/americano.png" alt="아메리카노">
+                            <a href="#none"><span>아메리카노</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/cafelatte.png" alt="카페라떼">
+                            <a href="#none"><span>카페라떼</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/creamlatte.png" alt="슈크림라떼">
+                            <a href="#none"><span>슈크림라떼</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/cappuccino.png" alt="카푸치노">
+                            <a href="#none"><span>카푸치노</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/vanillalatte.png" alt="바닐라 라떼">
+                            <a href="#none"><span>바닐라 라떼</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/white_americano.png" alt="화이트 아메리카노">
+                            <a href="#none"><span>화이트 아메리카노</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/caramelmacchiato.png" alt="카라멜 마끼아또">
+                            <a href="#none"><span>카라멜 마끼아또</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/hazelnutlatte.png" alt="헤이즐넛 라떼">
+                            <a href="#none"><span>헤이즐넛 라떼</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Beverage  -->
+                <div id="tab07">
+                    <h3 class="h3_beverage">Beverage</h3>
+                    <div class="coffee_box">
+                        <div class="c_box1">
+                            <img src="./images/sub1/orangrade.png" alt="orangrade">
+                            <a href="#"><span>오렌지에이드</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/grapefruitade.png" alt="grapefruitade">
+                            <a href="#"><span>자몽에이드</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/strawberrylemonade.png" alt="strawberrylemonade">
+                            <a href="#"><span>딸기레몬에이드</span></a>
+                        </div>
+                        <div class="c_box1">
+                            <img src="./images/sub1/lemonade.png" alt="lemonade">
+                            <a href="#"><span>레몬에이드</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 상세보기 -->
+        <div class="box">
+            <h1>바닐라 우유크림 도넛</h1>
+            <h3>Vanilla milk cream donut</h3>
+            <img src="./images/sub1/more_d.png" alt="상세 보기">
+            <p>달콤하고 깔끔한 바닐라 우유크림이 들어간 도넛</p>
+            <h2>알레르기 유발 요인</h2>
+            <p>밀, 우유, 대두, 계란 함유</p>
+            <h2>원산지 정보</h2>
+            <p>빵류[닷넛 도넛 믹스{밀가루(밀:미국, 캐나다산)}, 전란맥<br>
+                [(국내산)], 가공유크림1(독일산), 가공유크림2[유크림<br>
+                (이탈리아산), 농축유크림[(벨기에산)], 준초콜릿(이탈리아산),<br>
+                초콜릿(벨기에산), 당류가공품[바닐라 (국내산)]
+            </p>
+            <a href="#none"><img src="./images/sub1/close.png" alt="close"></a>
+           
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_in">
+            <a href="#none"><img src="./images/sub1/logo.png" alt="푸터 로고"></a>
+            <div class="f_text">
+                <ul class="c_i">
+                    <li>
+                        <p>COMPANY INFORMATION</p>
+                    </li>
+                    <li>주식회사 닷넛</li>
+                    <li>대표 : 김윤아</li>
+                    <li>부산시 수영구 민락로 23번길</li>
+                    <li>사업자등록번호 : 245-52-21445</li>
+                </ul>
+                <ul class="s">
+                    <li>
+                        <p>SOCIAL</p>
+                    </li>
+                    <li><a href="#none" class="insta">Instagram</a></li>
+                    <li><a href="#none" class="kakao">Kakaotalk Channel</a></li>
+                </ul>
+                <ul class="h">
+                    <li>
+                        <p>HEIP</p>
+                    </li>
+                    <li>고객센터 : 2000-0921</li>
+                    <li>운영시간 : 평일 8시~11시, 주말/공휴일 9시~11시(일요일 휴무)</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="./script/sub1.js"></script>
+</body>
+
+</html>

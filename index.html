@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1400px">
+    <title>Dotnut</title>
+    <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 마우스 따라다니는 선 -->
+    <div id="drawing_line">
+        <svg class="drawing_line_svg">
+            <circle class="drawing_line_circle" cx="0" cy="0" r="8"></circle>
+            <polyline class="drawing_line_polyline" points=""></polyline>
+        </svg>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="header_in">
+            <a href="./index.html"><img src="./images/index/logo.png" alt="로고" class="logo"></a>
+            <ul class="nav">
+                <li><a href="./sub1.html">Menu</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html">메뉴소개</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub2.html">Reservation</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html">픽업예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub3.html">Online Shop</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub3.html">리빙</a></li>
+                        <li><a href="./sub4.html">푸드</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub5.html">Event</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub5.html">이벤트</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub6.html">Brand</a>
+
+                    <ul class="sub">
+                        <li><a href="./sub6.html">스토리</a></li>
+                        <li><a href="./sub7.html">CI소개</a></li>
+                    </ul>
+
+                </li>
+                <li class="sub_bg"></li>
+            </ul>
+            <ul class="member">
+                <li><a href="#" class="member_login">Login</a></li>
+                <li><a href="#" class="member_cart">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <div class="banner">
+        <a href="#"><img src="./images/index/main_banner.png" alt="메인배너" class="main_banner"></a>
+        <a href="#"><img src="./images/index/banner_pink.png" alt="핑크캐릭터" class="banner_pink"></a>
+        <a href="#"><img src="./images/index/banner_blue.png" alt="블루캐릭터" class="banner_blue"></a>
+        <div class="banner_firecracker">
+            <a href="#">
+                <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 660 300"
+                    style="enable-background:new 0 0 660 300;" xml:space="preserve">
+                    <path class="st0" d="M136.7,124.4c0,0-5.9-42.3-40.1-44.9c0,0-5.9-1.9-5.2,4.1c0.7,5.9,13.7-0.4,6.3-16.3
+                c-7.4-15.9-16.3-23.7-16.3-23.7" />
+                    <path class="st1" d="M136.9,176.3c0,0-8.5-13.7-27.8-21.1" />
+                    <path class="st1" d="M81.4,213.8c0,0,36,5.2,46.7,6.3" />
+                    <path class="st1"
+                        d="M493.5,141.1c0,0-5.2-42,23.4-55.3c20-9.3,19.5,31.5,3,29.7c-13.7-1.5-16.7-43,18.9-49.7" />
+                    <path class="st0" d="M527.6,169.2c0,0,7.8-12.6,23.4-13.4" />
+                    <path class="st0" d="M567.7,203c0,0,64.8-8.9,80.6-14.5" />
+                    <path class="st2" d="M432.3,76.1c0,0,13.7-44.1,46.7-66" />
+                    <path class="st2" d="M627.8,128.8c0,0,8.2-5.2,18.5-6.7" />
+                    <path class="st2" d="M559.1,234.5c0,0,14.5,2.2,24.5,0" />
+                    <path class="st2" d="M51,110.6c0,0-21.1,1.5-36.7,0" />
+                    <path class="st2" d="M106.4,279.3c0,0,12.2,3.5,21.7,9.7" />
+                </svg></a>
+        </div>
+    </div>
+
+    <!-- 내용 -->
+    <section>
+        <!-- 베스트 메뉴 -->
+        <h1 class="BM"><span>Best Menu</span></h1>
+        <h5 class="title2">닷넛의 베스트메뉴를 소개합니다</h5>
+        <div class="swiper-container gallery">
+
+            <div class="gallery_inner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/vanilla_cus_d.png" alt="바커" class="b_image"></a>
+                        <a href="#none">
+                            <p class="b_text"><span>바닐라 커스터드 도넛</span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/vanilla_milk_d.png" alt="바밀" class="b_image"></a>
+                        <a href="#none">
+                            <p class="b_text"><span>바닐라 우유크림 도넛</span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/chocolate_oreo_d.png" alt="초코" class="b_image"></a>
+                        <a href="#none">
+                            <p class="b_text"><span>초코 오레오크림 도넛</span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/green_cocho_d.png" alt="녹차초코" class="g_image"></a>
+                        <a href="#none">
+                            <p class="b_text"><span>녹차초코 도넛</span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/strawberry_cream_d.png" alt="딸기" class="s_image"></a>
+                        <p class="b_text"><span>딸기크림 도넛</span></p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/coffee_cream_d.png" alt="커피" class="b_image"></a>
+                        <a href="#none">
+                            <p class="b_text"><span>커피크림 도넛</span></p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#none"><img src="./images/index/b_s.png" alt="갤러리1"></a>
+                        <a href="#none"><img src="./images/index/kayajam_d.png" alt="카야" class="k_image"></a>
+                        <a href="#none">
+                            <p class="b_text"><span>카야잼 버터 도넛</span></p>
+                        </a>
+                    </div>
+                </div>
+                <!-- 블릿 버튼 -->
+                <div class="swiper-pagination"></div>
+                <!-- 화살표 버튼 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- 뉴 메뉴 -->
+        <div data-aos="fade-up" class="new_menu">
+            <h1 class="NM"><span>New Menu</span></h1>
+            <h5 class="title2">닷넛의 신제품을 소개합니다</h5>
+            <img src="./images/index/blue_icon.png" alt="블루아이콘" class="b_icon">
+            <img src="./images/index/flower_icon_2.png" alt="플라워 아이콘2" class="f_icon">
+            <div class="ygr_box">
+                <div class="yellow_box">
+                    <h3>얼그레이 크림 도넛</h3>
+                    <h4>Earl Grey Cream Donut</h4>
+                    <a href="#none" class="wktpgl">
+                        자세히 보기
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="green_box">
+                    <h3>녹차 인절미 도넛</h3>
+                    <h4>Green tea injeolmi Donut</h4>
+                    <a href="#none" class="wktpgl2">자세히 보기
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="red_box">
+                    <h3>라즈베리 크림 도넛</h3>
+                    <h4>Raspberry Cream Donut</h4>
+                    <a href="#none" class="wktpgl3">자세히 보기
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 온라인샵 -->
+        <div data-aos="fade-up" class="os">
+            <!-- <img src="./images/index/pink_icon.png" alt="핑크 아이콘" class="pink"> -->
+            <h1 class="os_in"><span>Online Shop</span></h1>
+            <h5 class="title2">닷넛의 온라인 상품을 소개합니다</h5>
+            <a href="./sub3.html" class="more">ALL</a>
+            <a href="./sub3.html" class="more_img"><img src="./images/index/more.png" alt="더보기"></a>
+            <div class="product">
+                <div class="product_in">
+                    <div class="badge">
+                        <a href="./sub4.html"><img src="./images/index/os_badge.png" alt="뱃지" class="p1"></a>
+                        <div class="text">
+                            <a href="./sub4.html"><img src="./images/index/Arrow_icon.png" alt="화살표" class="arrow"></a>
+                            <h3 class="d_b">닷넛 뱃지</h3>
+                            <h4>3,000원</h4>
+                        </div>
+                    </div>
+                    <div class="masking">
+                        <a href="./sub4.html"><img src="./images/index/os_masking.png" alt="마스킹"></a>
+                        <div class="text">
+                            <a href="./sub4.html"><img src="./images/index/Arrow_icon.png" alt="화살표" class="arrow2"></a>
+                            <h3 class="d_m">닷넛 마스킹 테이프</h3>
+                            <h4>5,000원</h4>
+                        </div>
+                    </div>
+                    <div class="mug">
+                        <a href="./sub4.html"><img src="./images/index/os_mug.png" alt="머그"></a>
+                        <div class="text">
+                            <a href="./sub4.html"><img src="./images/index/Arrow_icon.png" alt="화살표" class="arrow3"></a>
+                            <h3 class="d_mu">닷넛 머그컵</h3>
+                            <h4>10,000원</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 이벤트 -->
+        <div data-aos="fade-up" class="event">
+            <img src="./images/index/e_3.png" alt="이벤트 배경1" class="e_3">
+            <img src="./images/index/e_4.png" alt="이벤트 배경2" class="e_4">
+            <div class="e_text">
+                <h1 class="e_in"><span>Event</span></h1>
+                <h5 class="e_h5">닷넛의 특별한 이벤트!</h5>
+                <img src="./images/index/e_blue.png" alt="e_blue" class="e_blue">
+                <img src="./images/index/e_pink.png" alt="e_pink" class="e_pink">
+            </div>
+            <div class="event_in">
+                <div class="swiper-container slide2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="e_1">
+                                <h6>2024.05.15</h6>
+                                <h3>닷넛의 특별 세일 데이!💕</h3>
+                                <p>딱 하루! 24시간 동안만 진행되는 닷넛의 특별 세일 데이를 만나보세요!</p>
+                                <a href="./sub5.html"><img src="./images/index/e_1.png" alt="이벤트1" class="e_1_image"></a>
+                            </div>
+                            <div class="e_2">
+                                <h6>2024.05.10 - 2024.06.10</h6>
+                                <h3>시즌 한정 딸기 케이크 출시!🍰</h3>
+                                <p>한달 간 만나볼 수 있는 닷넛의 프리미엄 딸기 케이크</p>
+                                <a href="./sub5.html"><img src="./images/index/e_2.png" alt="이벤트2" class="e_1_image"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="e_5">
+                                <h6>2024.05.10 - 2024.05.31</h6>
+                                <h3>신메뉴 구매 이벤트!🍩</h3>
+                                <p>닷넛의 신메뉴를 구매하시고 인증하시면 추첨을 통한 상품을 드려요!</p>
+                                <a href="./sub5.html"><img src="./images/index/e_5.png" alt="이벤트3" class="e_1_image"></a>
+                            </div>
+                            <div class="e_6">
+                                <h6>2024.04.20 - 2024.05.20</h6>
+                                <h3>소금빵 SET 이벤트🥐</h3>
+                                <p>5개를 세트로 구매하시면 소금빵 하나를 무료로 드리는 이벤트</p>
+                                <a href="./sub5.html"><img src="./images/index/e_6.png" alt="이벤트4" class="e_1_image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <!-- 화살표 버튼 -->
+                    <div class="swiper-button-next slide2-next"></div>
+                    <div class="swiper-button-prev slide2-prev"></div>
+                <div class="event_button">
+                    <img src="./images/index/event_btn.png" alt="이벤트 버튼" class="event_btn">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 예약 -->
+        <div data-aos="fade-up" class="reservation">
+            <img src="./images/index/reservation_bg_left.png" alt="1" class="r_bg_img">
+            <img src="./images/index/reservation_bg_right.png" alt="1" class="r_bg_img2">
+            <img src="./images/index/reservation_circle.png" alt="1" class="r_circle">
+            <img src="./images/index/flower_icon.png" alt="1" class="r_flower">
+            <h1 class="r_h1"><span>Reservation</span></h1>
+            <h5 class="title2">쉽고 간편하게 픽업 예약하기</h5>
+            <div class="r_in">
+                <img src="./images/index/reservation_image.png" alt="r배경" class="r_bg">
+                <div class="btn">
+                    <h3 class="p_t">Pick Up 예약하러 가기</h3>
+                    <img src="./images/index/r_2.png" alt="r_2" class="r_btn_2">
+                    <a href="./sub2.html"><img src="./images/index/r_1.png" alt="r_1" class="r_btn_1"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="footer_in">
+                <a href="#none"><img src="./images/index/logo.png" alt="푸터 로고"></a>
+                <div class="f_text">
+                    <ul class="c_i">
+                        <li>
+                            <p>COMPANY INFORMATION</p>
+                        </li>
+                        <li>주식회사 닷넛</li>
+                        <li>대표 : 김윤아</li>
+                        <li>부산시 수영구 민락로 23번길</li>
+                        <li>사업자등록번호 : 245-52-21445</li>
+                    </ul>
+                    <ul class="s">
+                        <li>
+                            <p>SOCIAL</p>
+                        </li>
+                        <li><a href="#none" class="insta">Instagram</a></li>
+                        <li><a href="#none" class="kakao">Kakaotalk Channel</a></li>
+                    </ul>
+                    <ul class="h">
+                        <li>
+                            <p>HEIP</p>
+                        </li>
+                        <li>고객센터 : 2000-0921</li>
+                        <li>운영시간 : 평일 8시~11시, 주말/공휴일 9시~11시(일요일 휴무)</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- 버튼 -->
+    <a href="#" class="top"><img src="./images/index/top_btn1.png " alt="버튼1"></a>
+
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+    <script src="./script/index.js"></script>
+
+</body>
+
+</html>
